@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemical Naming Rules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark">C</div>
+        <div>
+          <p class="eyebrow">Chemistry Study Guide</p>
+          <h1>Chemical Reading & Naming Rules</h1>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#rules">Rules</a>
+        <a href="#examples">Examples</a>
+        <a href="#practice">Practice</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="badge">Learn the language of compounds</span>
+          <h2>Read formulas, name compounds, and master the logic behind chemical names.</h2>
+          <p>
+            Chemical names follow patterns. Learn how to identify compounds, use element
+            symbols correctly, and apply naming rules for ionic compounds, molecular
+            compounds, acids, and hydrates.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#practice">Start Practice</a>
+            <a class="secondary-btn" href="#rules">View Rules</a>
+          </div>
+        </div>
+        <div class="formula-panel">
+          <div class="formula-box">
+            <p class="mini-label">Example</p>
+            <div class="formula-row">
+              <span class="formula">NaCl</span>
+              <span class="arrow">→</span>
+              <span class="name">Sodium chloride</span>
+            </div>
+            <div class="formula-row">
+              <span class="formula">CO₂</span>
+              <span class="arrow">→</span>
+              <span class="name">Carbon dioxide</span>
+            </div>
+            <div class="formula-row">
+              <span class="formula">H₂SO₄</span>
+              <span class="arrow">→</span>
+              <span class="name">Sulfuric acid</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="rules" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Core rules</p>
+          <h3>How to read and name chemicals</h3>
+        </div>
+        <div id="rulesGrid" class="rules-grid"></div>
+      </section>
+
+      <section id="examples" class="section alt-section">
+        <div class="section-heading">
+          <p class="eyebrow">Examples</p>
+          <h3>Common naming patterns</h3>
+        </div>
+        <div class="example-grid">
+          <article class="example-card">
+            <h4>Ionic compounds</h4>
+            <ul>
+              <li>NaCl = sodium chloride</li>
+              <li>MgO = magnesium oxide</li>
+              <li>CaBr₂ = calcium bromide</li>
+            </ul>
+            <p>Metal name first, then nonmetal with an “-ide” ending.</p>
+          </article>
+
+          <article class="example-card">
+            <h4>Covalent compounds</h4>
+            <ul>
+              <li>CO₂ = carbon dioxide</li>
+              <li>N₂O₅ = dinitrogen pentoxide</li>
+              <li>SO₃ = sulfur trioxide</li>
+            </ul>
+            <p>Use prefixes: mono-, di-, tri-, tetra-, penta-.</p>
+          </article>
+
+          <article class="example-card">
+            <h4>Acids</h4>
+            <ul>
+              <li>HCl = hydrochloric acid</li>
+              <li>H₂SO₄ = sulfuric acid</li>
+              <li>HNO₃ = nitric acid</li>
+            </ul>
+            <p>Acids often begin with H and are named by their anion.</p>
+          </article>
+
+          <article class="example-card">
+            <h4>Hydrates</h4>
+            <ul>
+              <li>CuSO₄·5H₂O = copper(II) sulfate pentahydrate</li>
+              <li>MgSO₄·7H₂O = magnesium sulfate heptahydrate</li>
+            </ul>
+            <p>Use the hydrate name plus the number of water molecules.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="practice" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Practice</p>
+          <h3>Test your knowledge</h3>
+        </div>
+
+        <div class="quiz-wrap">
+          <div class="quiz-card">
+            <div class="quiz-header">
+              <span id="progressLabel">Question 1 of 5</span>
+              <span id="scoreLabel">Score: 0</span>
+            </div>
+            <h4 id="questionText">Question will appear here.</h4>
+            <div id="optionsContainer" class="options-container"></div>
+            <div id="answerFeedback" class="answer-feedback hidden"></div>
+            <button id="nextButton" class="primary-btn hidden">Next Question</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="section-heading">
+          <p class="eyebrow">Quick decoder</p>
+          <h3>Read a formula</h3>
+        </div>
+
+        <div class="decoder-card">
+          <label for="formulaInput">Enter a formula:</label>
+          <div class="decoder-row">
+            <input id="formulaInput" type="text" placeholder="Example: NaCl" />
+            <button id="decodeButton" class="primary-btn">Decode</button>
+          </div>
+          <div id="decoderResult" class="decoder-result">Try NaCl, CO₂, H₂SO₄, or CaCO₃.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Study smarter: identify the compound type, check the ions, then apply the naming pattern.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
